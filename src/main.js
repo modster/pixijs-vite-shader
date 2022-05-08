@@ -1,20 +1,19 @@
 //import './style.css';
-//import { AsciiFilter } from '@pixi/filter-ascii';
+import { AsciiFilter } from '@pixi/filter-ascii';
 import { Container, Application, Sprite, Texture } from 'pixi.js';
 
 const app = new Application({
-  width: 1080,
-  height: 720,
+
   backgroundColor: 0x1099bb,
   resolution: window.devicePixelRatio || 1,
 });
-document.body.appendChild(app.view);
 
+document.body.appendChild(app.view);
 const container = new Container();
 app.stage.addChild(container);
 
 // Create a new texture
-const texture = Texture.from('image.jpg');
+const texture = Texture.from('image.png');
 
 // Create a new Sprite using the texture
 const bunny = new Sprite(texture);
@@ -22,6 +21,7 @@ bunny.anchor.set(0.5);
 
 // Add the bunny to the scene
 container.addChild(bunny);
+container.filters = [new AsciiFilter()];
 
 // Move container to the center
 container.x = app.screen.width / 2;
