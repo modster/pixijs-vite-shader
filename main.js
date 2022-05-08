@@ -3,8 +3,8 @@
 import { Container, Application, Sprite, Texture } from 'pixi.js';
 
 const app = new Application({
-  width: 800,
-  height: 600,
+  width: 1080,
+  height: 720,
   backgroundColor: 0x1099bb,
   resolution: window.devicePixelRatio || 1,
 });
@@ -34,5 +34,5 @@ container.pivot.y = container.height / 2;
 // Listen for animate update
 app.ticker.add((delta) => {
   // use delta to create frame-independent transform
-  container.rotation -= 0.01 * delta;
+  // container.rotation -= 0.01 * delta;
 });
