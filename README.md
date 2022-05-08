@@ -1,6 +1,10 @@
-# vitejs-vite-eanosn
+# pixijs vite shader template
 
-[Deployed On GitHub-Pages ⚡️](https://github.com/modster/vitejs-vite-eanosn)
-[Deployed on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-eanosn)
+⚡️A template for making custom filters and/or shaders.
 
-A template for making custom shaders with Pixi.JS.
+⚡️Created with Pixi.js, Vite, and StackBlitz. 
+
+[⚡️Deployed On GitHub-Pages](https://github.com/modster/pixijs-vite-shader-template)
+
+[⚡️Deployed on StackBlitz](https://stackblitz.com/edit/pixijs-vite-shader-template)
+
