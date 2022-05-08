@@ -1,14 +1,14 @@
-//import './style.css';
 import { AsciiFilter } from '@pixi/filter-ascii';
 import { Container, Application, Sprite, Texture } from 'pixi.js';
 
+//Construct a Pixi.JS application
 const app = new Application({
-
-  backgroundColor: 0x1099bb,
+  backgroundColor: 0x000000,
   resolution: window.devicePixelRatio || 1,
 });
-
 document.body.appendChild(app.view);
+
+// Create a container to do our buisness in
 const container = new Container();
 app.stage.addChild(container);
 
@@ -16,18 +16,18 @@ app.stage.addChild(container);
 const texture = Texture.from('image.png');
 
 // Create a new Sprite using the texture
-const bunny = new Sprite(texture);
-bunny.anchor.set(0.5);
+const sprite1 = new Sprite(texture);
+sprite1.anchor.set(0.5);
 
-// Add the bunny to the scene
-container.addChild(bunny);
+// Add the Sprite to the scene
+container.addChild(sprite1);
 container.filters = [new AsciiFilter()];
 
 // Move container to the center
 container.x = app.screen.width / 2;
 container.y = app.screen.height / 2;
 
-// Center bunny sprite in local container coordinates
+// Center sprite in local container coordinates
 container.pivot.x = container.width / 2;
 container.pivot.y = container.height / 2;
 
